@@ -669,7 +669,7 @@
             var color = d3.scale.linear()
                 .domain([0, rmax])
                 .interpolate(d3.interpolateHcl)
-                .range([d3.rgb("#00FFFF"), d3.rgb('#FFFF00')]); 
+                .range([d3.rgb("#00FFFF"), d3.rgb('#FF0000')]); 
 
             
 
@@ -751,7 +751,7 @@
                         .style("opacity", .9);
 
                     // define the text to be shown in the tooltip
-                    tooltip.html("(" + d[name] + ": " +"<br>" + d[xAttribute] + "%, " + "<br>" + d[yAttribute] + "%)")
+                    tooltip.html("(" + d[name] + ": " +"<br>" + d[xAttribute] + "%, " + "<br>" + d[yAttribute] + "%" + "<br>" + d[rAttribute] + "%)")
                         .style("left", (d3.event.pageX + 5) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
                 })
