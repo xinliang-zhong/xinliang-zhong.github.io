@@ -65,9 +65,9 @@
     var series=[];
 
 
-    d3.csv("percentage-of-children-214-who-experience-violent-discipline-at-home.csv",function(csv){
+    d3.csv("percentage.csv",function(csv){
             csv.map(function(d){
-                series.push([d['Code'],+d['Percentage of children (2–14) who experience any violent discipline (UNICEF Global Databases (2016)) (% children 2-14)']]);
+                series.push([d['Code'],+d['Percentage']]);
             })
             //called after the AJAX is success
             
